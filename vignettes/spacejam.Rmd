@@ -1,0 +1,57 @@
+---
+title: "spacejam"
+author: Olof Josefsson
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{spacejam}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+# Spacejam
+Spacejam is a package which connects to an API handed by NASA, which keep track
+of Coronal Mass Ejection ([CME](https://en.wikipedia.org/wiki/Coronal_mass_ejection)). 
+
+The package grabs a few parameters which you can use.
+
+## Getting started
+In the live version, you'll need to have your own API key. This can be
+generated [here](https://api.nasa.gov/).
+
+To get you started, after installing the package load the library as follows:
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(spacejam)
+```
+
+```{r}
+# You can call the CME function as following:
+a <- spacejam("2010-01-01", "2010-12-31")
+# This will return a class object which provides data about CME's from 2010. The dates can be changed as you prefer.
+```
+
+## Built in objects
+```{r}
+# Using `a` above, we can explore the different tools that comes with the package.
+# For example to check what data was retrieved:
+a$data
+
+
+# Info about the response:
+a$response
+```
+
+## Shiny Application
+`spacejam` also comes with a shiny-application. This can be found in 
+`spaceapp`. 
+
+If you run the app you will find an interactive histogram which shows the speed 
+of the observed CME's during the selected timeframe. You will also find a 
+small surprise!
