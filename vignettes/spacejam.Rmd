@@ -48,10 +48,3 @@ a$data
 a$response
 ```
 
-## Shiny Application
-`spacejam` also comes with a shiny-application. This can be found in 
-`spaceapp`. 
-
-If you run the app you will find an interactive histogram which shows the speed 
-of the observed CME's during the selected timeframe. You will also find a 
-small surprise!
