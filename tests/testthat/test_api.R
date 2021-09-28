@@ -1,5 +1,5 @@
 # Test file for spacejam.
-context("CME")
+
 
 test_object <- spacejam("2010-01-01", "2010-12-31")
 
