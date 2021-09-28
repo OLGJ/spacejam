@@ -3,3 +3,4 @@
 export(spacejam)
 import(httr)
 import(jsonlite)
+importFrom(methods,new)
