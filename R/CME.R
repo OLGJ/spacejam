@@ -40,7 +40,7 @@ spacejam <- function(start_date, end_date){
 
   df = data.frame(index, time, speed, type)
 
-  # Response
+  # Response variables
   limit = as.character(res[3]$headers$`x-ratelimit-limit`)
   remain = res[3]$headers$`x-ratelimit-remaining`
   usage = paste0(as.character(remain), "/", limit)
@@ -58,3 +58,4 @@ spacejam <- function(start_date, end_date){
          response = response),
     class = "spacejam_API")
 }
+#a <- spacejam("2010-01-01", "2021-01-01")
