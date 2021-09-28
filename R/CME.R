@@ -5,6 +5,7 @@
 #' @return dataframe
 #' @export
 #' @import httr jsonlite
+#' @importFrom methods new
 
 spacejam <- function(start_date, end_date){
   stopifnot({
