@@ -58,4 +58,3 @@ spacejam <- function(start_date, end_date){
          response = response),
     class = "spacejam_API")
 }
-#a <- spacejam("2010-01-01", "2021-01-01")
