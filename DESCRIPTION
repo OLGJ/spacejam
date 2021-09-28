@@ -28,6 +28,6 @@ Suggests:
     rmarkdown,
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
-Depends: httr, jsonlite
+Depends: httr, jsonlite, shiny
 RoxygenNote: 7.1.2
 VignetteBuilder: knitr
